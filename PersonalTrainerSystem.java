@@ -30,6 +30,7 @@ public class PersonalTrainerSystem
                 case 4:
                     DietCoach();
                     break;
+
                 case 5:
                     System.out.println("Thank you! Exiting Program");
                 default:
@@ -49,7 +50,7 @@ public class PersonalTrainerSystem
         System.out.println("3.Log Personal Record/Goals");
         System.out.println("4.Diet Coach");
         System.out.println("5.EXIT");
-        System.out.println("");
+        System.out.println();
     }
      //Bmi Calculator method//
     public static void BMI()
@@ -63,7 +64,7 @@ public class PersonalTrainerSystem
         height = input.nextDouble();
         System.out.println("Please enter your weight(In Kilograms) ");
         weight = input.nextDouble();
-        System.out.println("");
+        System.out.println();
 
         heights= height*height;
 
@@ -89,9 +90,9 @@ public class PersonalTrainerSystem
         Scanner scanner = new Scanner(System.in);
         String[] exercises = {"Bench PR", "Squat PR"};
 
-        double [] currentPR = new double [3];
+        double [] currentPR = new double [2];
         
-        double [] currentGoal =new double [3];
+        double [] currentGoal =new double [2];
         
         
         for (int i = 0; i < exercises.length; i++)
@@ -99,13 +100,13 @@ public class PersonalTrainerSystem
             System.out.print("Enter your " + exercises[i] + ": ");
             currentPR[i] = scanner.nextDouble();
         }
-        System.out.println("");
+        System.out.println();
         System.out.println("***Current Personal Records***");
         for (int i = 0; i < exercises.length; i++) 
         {
             System.out.println(exercises[i] + ": " + currentPR[i]);
         }
-        System.out.println("");
+        System.out.println();
         System.out.println("***Goals***");
         for (int i = 0; i<exercises.length; i++)
         {
@@ -125,19 +126,19 @@ public class PersonalTrainerSystem
 
         System.out.print("Enter your gender (M/F): ");
         char gender = scanner.next().charAt(0);
-        System.out.println("");
+        System.out.println();
         
         System.out.print("Enter your age: ");
         int age = scanner.nextInt();
-        System.out.println("");
+        System.out.println();
 
         System.out.print("Enter your height (in cm): ");
-        double height = scanner.nextDouble();
-        System.out.println("");
+        int height = scanner.nextInt();
+        System.out.println();
 
         System.out.print("Enter your weight (in kg): ");
         double weight = scanner.nextDouble();
-        System.out.println("");
+        System.out.println();
 
         double bmr;
         if (gender == 'M' || gender == 'm') {
@@ -157,7 +158,7 @@ public class PersonalTrainerSystem
         System.out.println("3. Moderately active (Moderate exercise/sports 3-5 days/week)");
         System.out.println("4. Very active (Hard exercise/sports 6-7 days a week)");
         System.out.println("5. Extremely active (Very hard exercise/sports & physical job)");
-        System.out.println("");
+        System.out.println();
         System.out.print("Enter your activity level (1-5): ");
         int activityLevel = scanner.nextInt();
         
@@ -183,7 +184,7 @@ public class PersonalTrainerSystem
                 return;
         }
 
-        System.out.println("");
+        System.out.println();
         System.out.println("*** Nutrition Plan ***");
         System.out.println("Caloric Intake: " + activity + " calories");
     }
@@ -207,7 +208,7 @@ public class PersonalTrainerSystem
 
         System.out.println("***Weekly Workout Plan***");
         for (int i = 0; i < days.length; i++) {
-            System.out.println("");
+            System.out.println();
             System.out.println(days[i] + ": " + workouts[i]);
         }
 
@@ -217,26 +218,26 @@ public class PersonalTrainerSystem
     //exercise list method
     public static void exercises()
     { 
-        System.out.println("");
+        System.out.println();
         System.out.println("***Chest***" + "                                                   ***Back***");
         System.out.println("Bench Press: 5Reps X 2Sets" + "                            Lat Pulldown: 8Reps X 3Sets");
         System.out.println("Incline Bench Press: 5Reps X 2Sets" + "                    Upper Back Row: 8Reps X 2Sets");
         System.out.println("Cable Flies: 10 Reps X 2Sets" + "                          FacePulls: 8Reps X 2Sets");
-        System.out.println("" + "                                                      Single Arm LatPulldown: 8Reps X2Sets");
-        System.out.println("");
+        System.out.println("                                                           Single Arm LatPulldown: 8Reps X2Sets");
+        System.out.println();
         System.out.println("***Triceps***" + "                                               ***Biceps***");
         System.out.println("JM Press: 8Reps X 2Sets" + "                               Dumbell Curls:  10Reps X2Sets");
         System.out.println("Tricep pulldowns:12Reps X 3 Sets" + "                      Dumbell Hammer Curls: 10Reps X 2 Sets");
         System.out.println("Single Arm Tricep Extensions 12 X 2Sets" + "               Cable Curls: 8Reps X 2 Sets");
-        System.out.println("");
+        System.out.println();
         System.out.println("***Legs***" + "                                                   ***Shoulders***");
         System.out.println("Barbell Squats: 12Reps X 1Set + 8Reps X 2Sets" + "              Dumbell Shoulder Press:10Reps X1Set +8Reps X 2Sets");
         System.out.println("Leg Curl:  12Reps X 3Sets" + "                             Cable lateral rasies:10Reps X3Sets");
         System.out.println("Leg Extension: 12Reps X3sets" + "                          Reverse flies:10Reps X2Sets");
         System.out.println("Calf Raises: 15Reps X 2Sets");
-        System.out.println("");
+        System.out.println();
         System.out.println("***Rest Day***");
-        System.out.println("");
+        System.out.println();
         System.out.println("***Cardio/Core***");
         System.out.println("2KM Jog");
         System.out.println("5 X 100m Sprints");
